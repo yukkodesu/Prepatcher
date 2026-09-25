@@ -20,7 +20,6 @@
 
     <!-- Nuget dependencies -->
     <PackageReference Include="Krafs.Publicizer" Version="2.3.0" />
-    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
     <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
 
   </ItemGroup>
@@ -43,4 +42,5 @@
     <ProjectReference Include="..\Prestarter\Prestarter.csproj" />
   </ItemGroup>
 
+  <Import Project="..\HarmonyReference.props" />
 </Project>

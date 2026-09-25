@@ -56,8 +56,10 @@ For more details and features, see https://github.com/Zetrith/Prepatcher/wiki
 
 
 ## Compiling
-Clone anywhere and go to the Source folder. Run `dotnet build` and/or `dotnet test`.
+Clone anywhere and go to the Source folder. Run `dotnet build Prepatcher.sln` and/or `dotnet test Prepatcher.sln`.
 If you want to run it ingame clone to the Mods folder.
+
+The build uses the included Harmony DLL. To rebuild it, run `pwsh -File Rebuild-Harmony.ps1` from the Source folder with Git and the .NET 10 SDK installed.
 
 ## Acknowledgments
 Thanks to Pardeike for making [Harmony](https://github.com/pardeike/Harmony), 0x0ade for [MonoMod](https://github.com/MonoMod/MonoMod) and jbevain for [Mono.Cecil](https://github.com/jbevain/cecil).

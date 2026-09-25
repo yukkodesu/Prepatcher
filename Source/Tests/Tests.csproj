@@ -16,7 +16,6 @@
         <PackageReference Include="NUnit3TestAdapter" Version="4.3.0" />
         <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
         <PackageReference Include="coverlet.collector" Version="3.1.2" />
-        <PackageReference Include="Lib.Harmony" Version="2.4.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -33,4 +32,5 @@
       <Using Include="System" />
     </ItemGroup>
 
+  <Import Project="..\HarmonyReference.props" />
 </Project>
