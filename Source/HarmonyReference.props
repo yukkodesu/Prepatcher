@@ -1,0 +1,11 @@
+<Project>
+  <!-- This fat assembly includes MonoMod.Core 1.3.6. The NuGet 2.4.2 assembly
+       still embeds 1.3.3; restoring that package would reintroduce the bug. -->
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(MSBuildThisFileDirectory)..\Assemblies\0Harmony.dll</HintPath>
+      <Private>true</Private>
+      <Private Condition="'$(MSBuildProjectName)' == 'Prestarter' Or '$(MSBuildProjectName)' == 'TestAssembly'">false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

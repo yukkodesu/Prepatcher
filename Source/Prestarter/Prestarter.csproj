@@ -14,7 +14,6 @@
 
     <ItemGroup>
       <PackageReference Include="Krafs.Publicizer" Version="2.3.0" />
-      <PackageReference Include="Lib.Harmony" Version="2.4.2" ExcludeAssets="runtime" />
       <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
     </ItemGroup>
 
@@ -22,4 +21,5 @@
       <Publicize Include="UnityEngine.UIElementsModule;Assembly-CSharp" />
     </ItemGroup>
 
+  <Import Project="..\HarmonyReference.props" />
 </Project>
